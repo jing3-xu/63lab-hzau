@@ -1,0 +1,256 @@
+:root {
+    --primary-green: #2e7d32;
+    --secondary-green: #81c784;
+    --accent-gray: #37474f;
+    --background: #f5f5f6;
+}
+
+body {
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: var(--background);
+}
+
+nav {
+    background: var(--primary-green);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 80px auto 0;
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.intro-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+}
+
+/* 师资队伍样式 */
+.faculty {
+    padding: 2rem;
+}
+
+.teacher-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.teacher-card h3 {
+    color: var(--primary-green);
+    margin-top: 0;
+}
+
+.teacher-info p {
+    margin: 0.5rem 0;
+}
+
+.details {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--background);
+    border-radius: 6px;
+}
+
+.details h4 {
+    margin-top: 0;
+    color: var(--accent-gray);
+}
+
+/* 论文列表样式 */
+.papers {
+    padding: 2rem;
+}
+
+.paper-year {
+    margin: 2rem 0;
+    border-left: 4px solid var(--primary-green);
+    padding-left: 1rem;
+}
+
+.paper-year h3 {
+    color: var(--accent-gray);
+    margin: 0 0 1rem;
+}
+
+.paper-item {
+    background: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.paper-item a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.paper-item a:hover {
+    text-decoration: underline;
+}
+
+.paper-item p {
+    margin: 0.5rem 0 0;
+    color: var(--accent-gray);
+    font-size: 0.9em;
+}
+
+/* 专利页面样式 */
+.patents {
+    padding: 2rem;
+}
+
+.patent-year {
+    margin: 2rem 0;
+}
+
+.patent-item {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.patent-title a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.patent-info {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    color: var(--accent-gray);
+    font-size: 0.9em;
+}
+
+/* 实验室环境样式 */
+.lab-environment {
+    padding: 2rem;
+}
+
+.lab-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.lab-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.lab-image {
+    height: 200px;
+    background: #eee;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+.equipment-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.equipment-item {
+    background: var(--background);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.base-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.base-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 学术资源样式 */
+.resources {
+    padding: 2rem;
+}
+
+.resource-category {
+    margin: 3rem 0;
+}
+
+.resource-item {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.resource-item a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.resource-item p {
+    margin: 0.5rem 0 0;
+    color: var(--accent-gray);
+}
